@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '\n💡 REMINDER: Files modified. Consider running /precommit to check changes.'"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '\n📋 DIRECTIVE: Immediately save current TodoWrite state to TODO.md before compaction proceeds. Use the same format as /save-todos command.'"
+          }
+        ]
+      }
+    ]
+  }
+}

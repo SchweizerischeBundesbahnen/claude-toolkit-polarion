@@ -1,0 +1,9 @@
+{
+  "name": "sbb-polarion-claude-toolkit",
+  "description": "SBB team toolkit: 12 specialized agents, workflow commands, and engineering best practices for Python, Ansible, API, and container development.",
+  "version": "1.0.0",
+  "author": {
+    "name": "SBB Team"
+  },
+  "keywords": ["python", "ansible", "containers", "api", "debugging", "testing"]
+}
