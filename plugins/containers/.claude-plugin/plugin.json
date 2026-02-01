@@ -1,7 +1,6 @@
 {
   "name": "containers",
   "description": "Container optimization toolkit: Alpine Linux and Red Hat UBI expertise for production deployments.",
-  "version": "1.0.0",
   "author": {
     "name": "SBB Polarion Team"
   },

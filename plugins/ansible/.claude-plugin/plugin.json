@@ -1,7 +1,6 @@
 {
   "name": "ansible",
   "description": "Ansible infrastructure automation toolkit: playbooks, roles, Molecule testing, and Testinfra verification.",
-  "version": "1.0.0",
   "author": {
     "name": "SBB Polarion Team"
   },

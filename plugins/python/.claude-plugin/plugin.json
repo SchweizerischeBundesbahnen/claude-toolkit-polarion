@@ -1,7 +1,6 @@
 {
   "name": "python",
   "description": "Python development toolkit: FastAPI, async patterns, API design, debugging, and Ruff linting.",
-  "version": "1.0.0",
   "author": {
     "name": "SBB Polarion Team"
   },
