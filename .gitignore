@@ -9,16 +9,6 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.Python
-*.so
-.env
-.venv/
-venv/
-
 # Temporary files
 *.tmp
 *.temp
@@ -27,3 +17,4 @@ venv/
 # Local development
 .claude/
 TODO.md
+/node_modules/

@@ -1,0 +1,26 @@
+{
+  "name": "sbb-claude-plugins",
+  "description": "SBB Polarion team plugin marketplace: specialized agents for Python, Ansible, containers, and development workflows.",
+  "plugins": [
+    {
+      "name": "ansible",
+      "description": "Ansible infrastructure automation toolkit",
+      "source": { "source": "local", "path": "../plugins/ansible" }
+    },
+    {
+      "name": "python",
+      "description": "Python development toolkit",
+      "source": { "source": "local", "path": "../plugins/python" }
+    },
+    {
+      "name": "containers",
+      "description": "Container optimization toolkit",
+      "source": { "source": "local", "path": "../plugins/containers" }
+    },
+    {
+      "name": "core",
+      "description": "Core utilities and workflows",
+      "source": { "source": "local", "path": "../plugins/core" }
+    }
+  ]
+}
