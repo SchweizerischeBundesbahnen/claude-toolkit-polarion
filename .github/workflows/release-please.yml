@@ -1,17 +1,21 @@
 ---
-name: Release
+name: Release Automation
 
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   release-please:
+    name: Release Please
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
+      issues: write
     steps:
-      - uses: googleapis/release-please-action@v4
+      - name: Run Release Please
+        uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # v4.4.0
         with:
           release-type: simple
