@@ -1,7 +1,7 @@
 ---
 name: deep-research-analyst
 description: Use this agent when the user needs comprehensive internet research with critical analysis and synthesis. Excels at gathering multiple sources, comparing technologies, analyzing claims, verifying facts, and synthesizing findings with evidence-based reasoning.
-tools: Read, WebFetch, WebSearch, TodoWrite, Glob, Grep
+tools: Read, WebFetch, WebSearch, TodoWrite, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: red
 ---
