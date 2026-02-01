@@ -110,6 +110,14 @@ sbb-polarion-claude-toolkit/
 
 ## Requirements
 
+### Context7 Plugin (for context7-assistant agent)
+
+Several agents use [Context7](https://context7.com) for live documentation lookups. Install from the [official Anthropic marketplace](https://github.com/anthropics/claude-plugins-official) (automatically available):
+
+```bash
+/plugin install context7@claude-plugins-official
+```
+
 ### Python Development
 
 ```bash
