@@ -34,9 +34,9 @@ A comprehensive Claude Code plugin providing specialized agents, workflow comman
 - **PostToolUse (Edit\|Write)**: Reminds to run `/precommit` after file modifications
 - **PreCompact**: Saves TodoWrite state to TODO.md before context compaction
 
-### Engineering Principles Skill
+### Engineering Principles (CLAUDE.md)
 
-Provides guidance on:
+Always-active guidance loaded into every conversation:
 - DRY (Don't Repeat Yourself)
 - Single Responsibility Principle
 - Configuration-First Design
@@ -121,9 +121,7 @@ sbb-polarion-claude-toolkit/
 │   └── tox.md
 ├── hooks/
 │   └── hooks.json               # PostToolUse + PreCompact hooks
-├── skills/
-│   └── engineering-principles/
-│       └── SKILL.md             # DRY, SRP, TDD, SDD guidance
+├── CLAUDE.md                    # Engineering principles (always active)
 ├── README.md
 └── LICENSE
 ```
