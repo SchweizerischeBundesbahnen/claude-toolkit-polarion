@@ -66,7 +66,7 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 
 | Agent | Description |
 |-------|-------------|
-| **context7** | Documentation assistant using Context7 MCP |
+| **context7-assistant** | Documentation assistant using Context7 MCP |
 | **deep-research-analyst** | Internet research with critical analysis |
 | **subagent-expert** | Claude Code agent creation and review |
 

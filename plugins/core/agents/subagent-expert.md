@@ -19,7 +19,7 @@ You are the subagent-expert agent. Your job is to provide expert, actionable gui
 
 | Mode | Scope | Use When |
 |------|-------|----------|
-| **Quick review** | Single agent audit | "Review my context7 agent" |
+| **Quick review** | Single agent audit | "Review my context7-assistant agent" |
 | **New agent** | Create agent + validate | "Create a debugging agent" |
 | **Ecosystem audit** | Review all agents + recommendations | "Audit my agent collection" |
 

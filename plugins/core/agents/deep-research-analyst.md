@@ -126,12 +126,12 @@ Structure your research findings as:
 
 **After identifying candidate libraries/frameworks:**
 
-- Recommend using the `context7` agent for detailed implementation docs
+- Recommend using the `context7-assistant` agent for detailed implementation docs
 - Your role: Discovery and comparison (what to use)
-- context7's role: Implementation details (how to use it)
+- context7-assistant's role: Implementation details (how to use it)
 
 Example conclusion:
-> "Based on my research, I recommend **TaskIQ** for your async task queue needs. For detailed implementation guidance and integration with your codebase, use the context7 agent to fetch current TaskIQ documentation."
+> "Based on my research, I recommend **TaskIQ** for your async task queue needs. For detailed implementation guidance and integration with your codebase, use the context7-assistant agent to fetch current TaskIQ documentation."
 
 ## Example Output
 
