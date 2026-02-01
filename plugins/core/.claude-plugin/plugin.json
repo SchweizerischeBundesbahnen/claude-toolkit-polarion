@@ -2,7 +2,8 @@
   "name": "core",
   "description": "Core development utilities: documentation lookup, research analysis, workflow commands, and hooks.",
   "author": {
-    "name": "SBB Polarion Team"
+    "name": "SBB Polarion Team",
+    "email": "polarion-opensource@sbb.ch"
   },
   "keywords": ["core", "utilities", "commands", "hooks", "research", "documentation"]
 }

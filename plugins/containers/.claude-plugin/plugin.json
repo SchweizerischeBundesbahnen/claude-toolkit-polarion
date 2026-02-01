@@ -2,7 +2,8 @@
   "name": "containers",
   "description": "Container optimization toolkit: Alpine Linux and Red Hat UBI expertise for production deployments.",
   "author": {
-    "name": "SBB Polarion Team"
+    "name": "SBB Polarion Team",
+    "email": "polarion-opensource@sbb.ch"
   },
   "keywords": ["containers", "docker", "alpine", "ubi", "redhat", "openshift"]
 }

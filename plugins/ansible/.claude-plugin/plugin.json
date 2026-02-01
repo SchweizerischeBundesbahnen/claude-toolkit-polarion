@@ -2,7 +2,8 @@
   "name": "ansible",
   "description": "Ansible infrastructure automation toolkit: playbooks, roles, Molecule testing, and Testinfra verification.",
   "author": {
-    "name": "SBB Polarion Team"
+    "name": "SBB Polarion Team",
+    "email": "polarion-opensource@sbb.ch"
   },
   "keywords": ["ansible", "molecule", "testinfra", "infrastructure", "automation"]
 }

@@ -1,7 +1,8 @@
 {
-  "name": "sbb-claude-plugins",
+  "name": "claude-toolkit-polarion",
   "owner": {
-    "name": "SBB Polarion Team"
+    "name": "SBB Polarion Team",
+    "email": "polarion-opensource@sbb.ch"
   },
   "plugins": [
     {

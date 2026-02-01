@@ -1,4 +1,4 @@
-# SBB Polarion Claude Toolkit - Configuration
+# Claude Toolkit Polarion - Configuration
 
 ## MCP Tool Usage Priority
 

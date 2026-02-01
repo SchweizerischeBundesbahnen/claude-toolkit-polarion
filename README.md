@@ -1,4 +1,4 @@
-# SBB Claude Plugins
+# Claude Toolkit Polarion
 
 A monorepo marketplace providing specialized Claude Code plugins for Python, Ansible, containers, and development workflows.
 
@@ -16,21 +16,21 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 ### Add the Marketplace
 
 ```bash
-/plugin marketplace add ariwk/sbb-polarion-claude-toolkit
+/plugin marketplace add ariwk/claude-toolkit-polarion
 
 # Or pin to a specific version/branch:
-/plugin marketplace add ariwk/sbb-polarion-claude-toolkit#v1.0.0
-/plugin marketplace add ariwk/sbb-polarion-claude-toolkit#main
+/plugin marketplace add ariwk/claude-toolkit-polarion#v1.0.0
+/plugin marketplace add ariwk/claude-toolkit-polarion#main
 ```
 
 ### Install Individual Plugins
 
 ```bash
 # Install only what you need
-/plugin install ansible@sbb-claude-plugins
-/plugin install python@sbb-claude-plugins
-/plugin install containers@sbb-claude-plugins
-/plugin install core@sbb-claude-plugins
+/plugin install ansible@claude-toolkit-polarion
+/plugin install python@claude-toolkit-polarion
+/plugin install containers@claude-toolkit-polarion
+/plugin install core@claude-toolkit-polarion
 ```
 
 ### Verify Installation
@@ -86,7 +86,7 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 ## Repository Structure
 
 ```
-sbb-polarion-claude-toolkit/
+claude-toolkit-polarion/
 ├── .claude-plugin/
 │   └── marketplace.json        # Marketplace manifest
 ├── plugins/
