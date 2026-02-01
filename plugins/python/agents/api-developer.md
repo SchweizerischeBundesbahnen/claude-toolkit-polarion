@@ -1,7 +1,7 @@
 ---
 name: api-developer
 description: Design and build developer-friendly APIs with proper documentation, versioning, and security. Specializes in REST, GraphQL, and API gateway patterns. Use PROACTIVELY for API-first development and integration projects.
-tools: Read, Write, Edit, Bash, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Edit, Bash, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

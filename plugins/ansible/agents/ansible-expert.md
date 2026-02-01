@@ -1,7 +1,7 @@
 ---
 name: ansible-expert
 description: Ansible development expert for playbooks, roles, and collections. Handles role creation, reviews, best practices, and debugging. Coordinates with molecule-expert and testinfra-expert for testing.
-tools: Read, Write, Edit, Bash, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Edit, Bash, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

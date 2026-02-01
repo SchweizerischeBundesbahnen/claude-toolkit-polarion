@@ -131,7 +131,7 @@ You are the {agent-name} agent. Your job is...
 **Example - Documentation Agent:**
 
 ```yaml
-tools: Read, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 # NOT: Write, Bash, Glob (not needed for docs fetching)
 ```
 
@@ -268,7 +268,7 @@ You are a debugging specialist focused on root cause analysis.
 ---
 name: context7-docs
 description: Fetch current documentation for any library/framework using Context7
-tools: Read, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 ---
 

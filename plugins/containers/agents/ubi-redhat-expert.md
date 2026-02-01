@@ -1,7 +1,7 @@
 ---
 name: ubi-redhat-expert
 description: Red Hat UBI expert for Dockerfile optimization, package management, security hardening, and troubleshooting.
-tools: Read, Write, Bash, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Bash, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

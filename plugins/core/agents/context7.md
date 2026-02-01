@@ -1,7 +1,7 @@
 ---
 name: context7
 description: Context-aware documentation assistant. Reads codebase to understand current usage patterns and versions, fetches current docs via Context7, synthesizes actionable recommendations. Use PROACTIVELY for library questions.
-tools: Read, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

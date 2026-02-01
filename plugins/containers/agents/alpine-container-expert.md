@@ -1,7 +1,7 @@
 ---
 name: alpine-container-expert
 description: Alpine Linux container specialist for minimal, secure, optimized Docker builds. Covers Alpine packages, musl compatibility, multi-stage builds, security hardening, and size optimization.
-tools: Read, Write, Bash, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Bash, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

@@ -1,7 +1,7 @@
 ---
 name: molecule-expert
 description: Molecule testing framework expert. Creates test scenarios, multi-platform testing, and CI/CD integration for Ansible roles. Coordinates with ansible-expert and testinfra-expert.
-tools: Read, Write, Edit, Bash, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Edit, Bash, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

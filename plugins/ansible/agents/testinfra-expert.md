@@ -1,7 +1,7 @@
 ---
 name: testinfra-expert
 description: TestInfra infrastructure testing expert. Writes verification tests, validates system state, and ensures compliance with pytest. Coordinates with ansible-expert and molecule-expert.
-tools: Read, Write, Edit, Bash, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Edit, Bash, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

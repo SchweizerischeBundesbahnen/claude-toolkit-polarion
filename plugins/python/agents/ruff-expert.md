@@ -1,7 +1,7 @@
 ---
 name: ruff-expert
 description: Expert in configuring Ruff Python linter based on 2025 community best practices and real-world usage patterns from the Python community.
-tools: Read, Write, Bash, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Bash, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: red
 ---

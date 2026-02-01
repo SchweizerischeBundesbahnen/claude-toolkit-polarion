@@ -1,7 +1,7 @@
 ---
 name: code-debugger
 description: Systematically identify, diagnose, and resolve bugs using advanced debugging techniques. Specializes in root cause analysis and complex issue resolution. Use PROACTIVELY for troubleshooting and bug investigation.
-tools: Read, Write, Edit, Bash, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Edit, Bash, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---

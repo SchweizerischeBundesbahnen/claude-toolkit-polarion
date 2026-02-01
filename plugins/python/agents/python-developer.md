@@ -1,7 +1,7 @@
 ---
 name: python-developer
 description: Write clean, efficient Python code following PEP standards. Specializes in FastAPI web development, data processing, and automation. Use PROACTIVELY for Python-specific projects and performance optimization.
-tools: Read, Write, Edit, Bash, Glob, Grep, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Edit, Bash, Glob, Grep, mcp__plugin_context7_context7__resolve-library-id, mcp__plugin_context7_context7__query-docs
 model: inherit
 color: yellow
 ---
