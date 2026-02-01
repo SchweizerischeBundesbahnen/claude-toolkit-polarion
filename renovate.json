@@ -1,6 +1,25 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": [
+    "Default Renovate preset for Polarion Docker repos (hosted app)"
+  ],
   "extends": [
-    "config:recommended"
+    "config:best-practices",
+    ":semanticCommits",
+    ":enablePreCommit"
+  ],
+  "automergeType": "branch",
+  "platformAutomerge": true,
+  "prCreation": "not-pending",
+  "rebaseWhen": "behind-base-branch",
+
+  "packageRules": [
+    {
+      "matchManagers": [
+        "pre-commit",
+        "github-actions"
+      ],
+      "automerge": true
+    }
   ]
 }
