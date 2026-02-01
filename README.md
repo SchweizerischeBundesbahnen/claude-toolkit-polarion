@@ -17,6 +17,10 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 
 ```bash
 /plugin marketplace add ariwk/sbb-polarion-claude-toolkit
+
+# Or pin to a specific version/branch:
+/plugin marketplace add ariwk/sbb-polarion-claude-toolkit#v1.0.0
+/plugin marketplace add ariwk/sbb-polarion-claude-toolkit#main
 ```
 
 ### Install Individual Plugins
