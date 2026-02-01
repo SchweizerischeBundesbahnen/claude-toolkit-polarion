@@ -1,0 +1,42 @@
+---
+# Pre-commit configuration for Claude Code plugin
+# See https://pre-commit.com for more information
+# Run: pre-commit install (first time setup)
+# Run: pre-commit run --all-files (check all files)
+
+default_install_hook_types: [pre-commit, commit-msg]
+
+repos:
+  # General file hygiene
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+
+  # JSON formatting with prettier
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        types_or: [json]
+        args: ["--write"]
+
+  # Secret detection
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.12.1
+    hooks:
+      - id: commitizen

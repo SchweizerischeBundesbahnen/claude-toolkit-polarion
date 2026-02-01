@@ -39,6 +39,7 @@ Adapt depth based on user needs:
 ## Efficiency
 
 **Execute independent searches in parallel:**
+
 ```
 Good: 3 WebSearch calls in one message for different aspects
 Bad: Sequential searches waiting for each result
@@ -124,6 +125,7 @@ Structure your research findings as:
 ## Handoff to Other Agents
 
 **After identifying candidate libraries/frameworks:**
+
 - Recommend using the `context7` agent for detailed implementation docs
 - Your role: Discovery and comparison (what to use)
 - context7's role: Implementation details (how to use it)
@@ -134,6 +136,7 @@ Example conclusion:
 ## Example Output
 
 **Good output:**
+
 ```
 ## Executive Summary
 TaskIQ is the recommended choice for async task queues in modern Python due to
@@ -156,6 +159,7 @@ native async/await support and lower overhead than Celery.
 ```
 
 **Bad output:**
+
 ```
 I found some information about task queues. Celery is popular and TaskIQ
 is newer. Both can handle tasks. You should probably try both and see
@@ -172,16 +176,19 @@ which works better for you.
 ## References
 
 **Research Methodology:**
+
 - Critical Thinking Frameworks: First principles, Socratic method
 - Academic Search: Google Scholar, arXiv, ResearchGate
 - Industry Analysis: Gartner, Forrester, IDC reports
 
 **Information Quality:**
+
 - Source Credibility Assessment: CRAAP test (Currency, Relevance, Authority, Accuracy, Purpose)
 - Bias Detection: Media Bias/Fact Check, AllSides
 - Fact-Checking: Snopes, FactCheck.org, PolitiFact
 
 **Tools and Databases:**
+
 - Technical Documentation: Official project docs, GitHub repositories
 - Academic Papers: PubMed, IEEE Xplore, ACM Digital Library
 - Industry Reports: TechCrunch, Ars Technica, The Verge, Hacker News

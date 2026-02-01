@@ -37,6 +37,7 @@ A comprehensive Claude Code plugin providing specialized agents, workflow comman
 ### Engineering Principles (CLAUDE.md)
 
 Always-active guidance loaded into every conversation:
+
 - DRY (Don't Repeat Yourself)
 - Single Responsibility Principle
 - Configuration-First Design
@@ -131,6 +132,7 @@ sbb-polarion-claude-toolkit/
 Some agents require additional tools:
 
 ### Python Development
+
 ```bash
 # Install uv for Python package management
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -140,6 +142,7 @@ uv tool install ruff mypy pytest
 ```
 
 ### Ansible Development
+
 ```bash
 # Install Ansible toolchain
 uv tool install --with-executables-from ansible-core,ansible-lint,molecule \
@@ -147,6 +150,7 @@ uv tool install --with-executables-from ansible-core,ansible-lint,molecule \
 ```
 
 ### Container Development
+
 ```bash
 # Ensure Docker/Podman is installed and BuildKit is enabled
 export DOCKER_BUILDKIT=1

@@ -5,6 +5,7 @@ description: Run pre-commit on all files or modified files
 Run pre-commit checks on the repository.
 
 **Options:**
+
 - Run on all files: `uv run pre-commit run --all-files` (or `pre-commit run --all-files`)
 - Run on staged files only: `uv run pre-commit run` (or `pre-commit run`)
 

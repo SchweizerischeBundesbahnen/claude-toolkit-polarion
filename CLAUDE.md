@@ -3,6 +3,7 @@
 ## MCP Tool Usage Priority
 
 **Use MCP tools proactively. General priority order (project-specific overrides apply):**
+
 1. **Context7** - Library documentation
 2. **Other MCPs** - As appropriate for the task
 
@@ -49,6 +50,7 @@
 **WRITE TESTS FIRST, THEN IMPLEMENTATION**
 
 **Core TDD Principles:**
+
 - **Red-Green-Refactor cycle**: Write failing test → Make it pass → Refactor code
 - **Test before code**: Define expected behavior through tests before writing implementation
 - **Comprehensive coverage**: All code paths should be tested, including edge cases and error conditions
@@ -56,6 +58,7 @@
 - **Integration with CI/CD**: All tests must pass before commits/merges
 
 **CRITICAL: Project-Specific Testing Guidelines**
+
 - **ALWAYS read `tests/README.md` before writing or running tests**
 - The tests/README.md file contains:
   - Test structure and organization
@@ -72,16 +75,19 @@
 **WRITE SPECIFICATIONS FIRST, THEN PLAN AND IMPLEMENT**
 
 **Core Workflow:**
+
 - Specifications are the **single source of truth** (living markdown in `.github/spec.md`)
 - **SDD provides "what"** (requirements, architecture, contracts) → **TDD provides "how"** (tests, implementation)
 - Flow: Write spec.md → Break into TODO.md tasks → Implement with TDD → Update spec
 
 **CRITICAL: Read .github/spec.md First**
+
 - **ALWAYS read `.github/spec.md` before starting implementation**
 - If doesn't exist, ask user if they want to create it
 - Project-specific specifications OVERRIDE these general principles
 
 **Recommended spec.md Structure:**
+
 ```markdown
 # Specification: [Feature Name]
 ## Problem Statement
@@ -94,6 +100,7 @@
 ```
 
 **Spec → TODO → Implementation:**
+
 - **.github/spec.md** = Strategic (architecture, milestones, contracts)
 - **TODO.md** = Tactical (daily tasks from spec milestones)
 - **Code** = Implementation (fulfills spec + completes TODOs)
@@ -112,6 +119,7 @@
 When asked to review code/changes/files:
 
 **Focus on:**
+
 - Bugs or logic errors
 - Security vulnerabilities (SQL injection, XSS, auth bypass, secrets exposure)
 - Breaking changes (API changes, removed functionality)
@@ -142,6 +150,7 @@ When asked to review code/changes/files:
 **PRIMARY GOAL: PREVENT CONTEXT WINDOW EXHAUSTION - ALWAYS USE SUBAGENTS**
 
 **MUST use agents (Task tool) for:**
+
 - Research, documentation lookups, web searches
 - Codebase exploration ("where is X?", "how does Y work?")
 - Code reviews and debugging investigations
@@ -149,6 +158,7 @@ When asked to review code/changes/files:
 - Multi-step analysis tasks
 
 **Main context ONLY for:**
+
 - Direct edits to specific known files
 - Simple 1-2 file operations
 - Running commands/tests
@@ -161,6 +171,7 @@ When asked to review code/changes/files:
 Create subagents with **single, clear responsibilities** for focused tasks. Agents preserve main context, enable expert task handling, and support reusable workflows across projects.
 
 **When to Create Agents:**
+
 1. **Domain-specific expertise** - Specialized knowledge (debugging, code review, Ansible, containers)
 2. **Reusable workflows** - Consistent patterns used across multiple projects
 3. **Context separation** - Tasks needing separate context to avoid polluting main conversation
@@ -182,17 +193,20 @@ Agents with "Use PROACTIVELY" in their description are automatically invoked for
 **TodoWrite-First with Semi-Automated Persistence**
 
 **ALWAYS use TodoWrite as the primary task tracking tool**
+
 - Use TodoWrite for its native UI integration and structured format
 - Provides clean task management with proper state tracking (pending → in-progress → completed)
 - Zero risk of git pollution
 - System provides helpful reminders for multi-step tasks
 
 **TodoWrite Workflow:**
+
 1. For multi-step tasks, create todos using TodoWrite tool
 2. Update todo status as work progresses (mark in-progress, then completed)
 3. Complete tasks and close them out properly
 
 **TODO.md for Cross-Session Persistence**
+
 - **Automatically saved before `/compact`** via PreCompact hook
   - Hook outputs DIRECTIVE that Claude acts on immediately
   - Ensures TodoWrite state survives compaction
@@ -201,12 +215,14 @@ Agents with "Use PROACTIVELY" in their description are automatically invoked for
 - **Git handling** - Already excluded by whitelist `.gitignore`. To commit it later, add `!TODO.md` to `.gitignore`
 
 **Relationship to .github/spec.md (SDD):**
+
 - **spec.md** = Strategic plan (high-level milestones, architecture decisions)
 - **TODO.md** = Tactical implementation (day-to-day tasks derived from spec milestones)
 - **Workflow**: Spec milestones → Break into TODO.md tasks → Track progress → Update both
 - **Example**: spec.md says "Implement user authentication", TODO.md has "[ ] Create User model", "[ ] Add login endpoint", etc.
 
 **When TODO.md exists:**
+
 - Claude reads it at session start to restore context after `/compact`
 - Provides visibility in IDE file explorer for reference
 - Can be manually edited if needed
@@ -217,6 +233,7 @@ Agents with "Use PROACTIVELY" in their description are automatically invoked for
 **Keep documentation properly separated by purpose:**
 
 **CLAUDE.md (Project guidance for AI):**
+
 - Project architecture and structure
 - Development commands and workflows
 - Configuration guidance
@@ -224,6 +241,7 @@ Agents with "Use PROACTIVELY" in their description are automatically invoked for
 - NOT for progress tracking or coverage statistics
 
 **TODO.md (Tactical task tracking - semi-automated):**
+
 - Automatically created before `/compact` via PreCompact hook
 - Manual creation/updates via `/save-todos` command
 - Day-to-day implementation tasks derived from .github/spec.md milestones
@@ -233,6 +251,7 @@ Agents with "Use PROACTIVELY" in their description are automatically invoked for
 - Survives context compaction and session resets
 
 **README.md (User-facing documentation - committed):**
+
 - Installation instructions
 - Quick start examples
 - API usage examples
