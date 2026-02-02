@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": [
-    "Default Renovate preset for Polarion Docker repos (hosted app)"
+    "Default Renovate preset for Claude Code plugin repositories"
   ],
   "extends": [
     "config:best-practices",
