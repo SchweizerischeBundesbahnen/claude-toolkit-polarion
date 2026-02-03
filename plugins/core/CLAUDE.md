@@ -1,7 +1,5 @@
 # Claude Toolkit Polarion - Configuration
 
-> **Note**: This file is redistributed in the `core` plugin at `plugins/core/CLAUDE.md` so team members receive these guidelines when installing `core@claude-toolkit-polarion`. Changes should be made here and copied to the core plugin.
-
 ## MCP Tool Usage Priority
 
 **Use MCP tools proactively. General priority order (project-specific overrides apply):**
