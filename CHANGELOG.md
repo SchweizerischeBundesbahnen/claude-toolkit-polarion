@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v1.0.0...v1.1.0) (2026-02-03)
+
+
+### Features
+
+* **core:** redistribute CLAUDE.md in core plugin ([3dcdac1](https://github.com/ariwk/claude-toolkit-polarion/commit/3dcdac1867e618fcfbde769f87020d77edac2235))
+
 ## 1.0.0 (2026-02-01)
 
 
