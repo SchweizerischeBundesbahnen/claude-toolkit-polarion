@@ -1,12 +1,10 @@
 ---
 name: ActionLint
 on:
-  # Run on push to main/master branch
+  # Run on push to any branch
   push:
-    branches: [main]
   # Run on all pull requests
   pull_request:
-    branches: ['**']
   # Allow manual triggering
   workflow_dispatch:
 permissions:

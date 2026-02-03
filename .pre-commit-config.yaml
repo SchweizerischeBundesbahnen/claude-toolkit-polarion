@@ -20,7 +20,6 @@ repos:
       - id: check-merge-conflict
       - id: detect-private-key
       - id: mixed-line-ending
-        args: ["--fix=lf"]
 
   # Secret detection
   - repo: https://github.com/gitleaks/gitleaks
