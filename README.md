@@ -74,10 +74,12 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 | **deep-research-analyst** | Internet research with critical analysis |
 | **subagent-expert** | Claude Code agent creation and review |
 
-**Commands:**
-- `/precommit` - Run pre-commit checks
-- `/save-todos` - Save TodoWrite state to TODO.md
-- `/tox` - Run tox test suite
+**Skills:**
+| Skill | Description |
+|-------|-------------|
+| `/precommit` | Run pre-commit checks on staged or all files |
+| `/save-todos` | Persist TodoWrite state to TODO.md |
+| `/tox` | Run tox test suite with environment options |
 
 **Hooks:**
 - PostToolUse: Reminds to run pre-commit after file modifications
@@ -102,8 +104,8 @@ claude-toolkit-polarion/
 │   └── core/
 │       ├── .claude-plugin/plugin.json
 │       ├── agents/
-│       ├── commands/
-│       └── hooks/
+│       ├── hooks/
+│       └── skills/
 ├── CLAUDE.md
 └── README.md
 ```

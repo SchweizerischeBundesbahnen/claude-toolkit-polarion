@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **Claude Code plugin marketplace monorepo** (`claude-toolkit-polarion`) that provides specialized agents, commands, and hooks for Python, Ansible, container development, and core workflows.
+This is a **Claude Code plugin marketplace monorepo** (`claude-toolkit-polarion`) that provides specialized agents, skills, and hooks for Python, Ansible, container development, and core workflows.
 
 ## Repository Architecture
 
@@ -18,11 +18,11 @@ claude-toolkit-polarion/
 │   ├── ansible/                  # Ansible development toolkit (3 agents)
 │   ├── python/                   # Python development toolkit (4 agents)
 │   ├── containers/               # Container optimization toolkit (2 agents)
-│   └── core/                     # Core utilities (3 agents, commands, hooks)
+│   └── core/                     # Core utilities (3 agents, skills, hooks)
 │       ├── .claude-plugin/
 │       │   └── plugin.json       # Plugin metadata
 │       ├── agents/*.md           # Agent definitions
-│       ├── commands/*.md         # Command definitions
+│       ├── skills/*/SKILL.md     # Skill definitions
 │       ├── hooks/hooks.json      # Hook configurations
 │       └── CLAUDE.md             # Redistributed to users installing core plugin
 ├── .github/workflows/            # CI/CD automation
@@ -40,7 +40,7 @@ claude-toolkit-polarion/
 
 **Plugin Components:**
 - **Agents** (`.md` files in `agents/`) - AI personas with specialized knowledge and tool access
-- **Commands** (`.md` files in `commands/`) - User-invocable `/command` workflows
+- **Skills** (`SKILL.md` files in `skills/<name>/`) - User-invocable `/skill` workflows with dynamic context and tool restrictions
 - **Hooks** (`hooks/hooks.json`) - Event-driven automation (PostToolUse, PreCompact, etc.)
 
 **CLAUDE.md Files:**
@@ -65,17 +65,20 @@ proactivelyUse: true  # optional, auto-invokes agent for matching tasks
 3. Write agent instructions in markdown body
 4. Test: `/agents` to verify it appears, then invoke manually or via proactivelyUse
 
-### Creating a New Command
+### Creating a New Skill
 
-1. Create `plugins/<plugin-name>/commands/<command-name>.md`
+1. Create `plugins/<plugin-name>/skills/<skill-name>/SKILL.md`
 2. Add frontmatter:
 ```yaml
 ---
-description: Short description of command
+name: skill-name
+description: Short description (shown in skill list)
+allowed-tools: Bash(uv *), Read, Write  # optional, restricts tool access
 ---
 ```
-3. Write command instructions in markdown body
-4. Test: `/<command-name>`
+3. Write skill instructions in markdown body
+4. Use dynamic context with backtick commands: `` `!`git status`` ``
+5. Test: `/<skill-name>`
 
 ### Modifying Hooks
 
@@ -115,7 +118,7 @@ Example structure:
 }
 ```
 3. Update root `marketplace.json` to add the new plugin to the `plugins` array
-4. Create agents, commands, or hooks as needed
+4. Create agents, skills, or hooks as needed
 
 ## Development Commands
 
