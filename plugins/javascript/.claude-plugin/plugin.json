@@ -1,0 +1,9 @@
+{
+  "name": "javascript",
+  "description": "JavaScript/TypeScript development toolkit: React, Node.js, ESLint, and modern JS patterns.",
+  "author": {
+    "name": "SBB Polarion Team",
+    "email": "polarion-opensource@sbb.ch"
+  },
+  "keywords": ["javascript", "typescript", "react", "nodejs", "eslint"]
+}
