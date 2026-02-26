@@ -62,8 +62,15 @@ tools: [Read, Write, Bash]  # optional, restricts tool access
 proactivelyUse: true  # optional, auto-invokes agent for matching tasks
 ---
 ```
-3. Write agent instructions in markdown body
+3. Write agent instructions following the design principles below
 4. Test: `/agents` to verify it appears, then invoke manually or via proactivelyUse
+
+**Agent design principles (mandatory):**
+- **Minimal and hazard-focused** — cover only what Claude cannot discover itself
+- **No code templates** — they anchor Claude to specific patterns even when inappropriate
+- **No general best practices** — Claude already knows DRY, TDD, PEP 8, etc.
+- **Target under 100 lines** — if you need more, the agent scope is too broad
+- **Hazards section** — non-obvious project-specific landmines, not generic advice
 
 ### Creating a New Skill
 
@@ -167,13 +174,13 @@ If testing with plugins installed locally:
 
 - Location: `plugins/<plugin>/agents/<agent-name>.md`
 - Frontmatter: YAML with `description`, optional `model`, `tools`, `proactivelyUse`
-- Body: Markdown instructions for the agent
+- Body: Minimal, hazard-focused instructions (see agent design principles above)
 
-### Command Markdown Files
+### Skill Markdown Files
 
-- Location: `plugins/<plugin>/commands/<command-name>.md`
-- Frontmatter: YAML with `description`
-- Body: Markdown instructions executed when user runs `/<command-name>`
+- Location: `plugins/<plugin>/skills/<skill-name>/SKILL.md`
+- Frontmatter: YAML with `name`, `description`, optional `allowed-tools`
+- Body: Step-by-step instructions executed when user runs `/<skill-name>`
 
 ### Plugin JSON Schema
 
