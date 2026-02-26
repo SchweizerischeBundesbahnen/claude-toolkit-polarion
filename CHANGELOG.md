@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v1.1.0...v2.0.0) (2026-02-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **core:** Commands directory removed. Use skills instead (/precommit, /save-todos, /tox).
+
+### Features
+
+* **agents:** adopt minimal hazard-focused agent design across all plugins ([30c94fd](https://github.com/ariwk/claude-toolkit-polarion/commit/30c94fdecacb5a5be5be74e1e8340e10567f76a3))
+* **core:** adopt Agent Skills pattern for commands ([35b67c3](https://github.com/ariwk/claude-toolkit-polarion/commit/35b67c3189cb5bde27214efdd08bd56e3089e8c6)), closes [#4](https://github.com/ariwk/claude-toolkit-polarion/issues/4)
+
 ## [1.1.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v1.0.0...v1.1.0) (2026-02-03)
 
 
