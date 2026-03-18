@@ -14,5 +14,5 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      release-type: maven
+      release-type: simple
       target-branch: ${{ github.ref_name }}
