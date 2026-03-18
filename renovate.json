@@ -4,22 +4,6 @@
     "Default Renovate preset for Claude Code plugin repositories"
   ],
   "extends": [
-    "config:best-practices",
-    ":semanticCommits",
-    ":enablePreCommit"
-  ],
-  "automergeType": "branch",
-  "platformAutomerge": true,
-  "prCreation": "not-pending",
-  "rebaseWhen": "behind-base-branch",
-
-  "packageRules": [
-    {
-      "matchManagers": [
-        "pre-commit",
-        "github-actions"
-      ],
-      "automerge": true
-    }
+    "github>SchweizerischeBundesbahnen/casc-renovate-preset-polarion"
   ]
 }

@@ -1,36 +1,33 @@
 ---
-# Pre-commit configuration for Claude Code plugin
-# See https://pre-commit.com for more information
-# Run: pre-commit install (first time setup)
-# Run: pre-commit run --all-files (check all files)
-
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
-  # General file hygiene
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-json
       - id: check-added-large-files
-        args: ["--maxkb=500"]
+        args: [--maxkb=512]
+      - id: check-case-conflict
       - id: check-merge-conflict
-      - id: detect-private-key
+      - id: trailing-whitespace
+        exclude_types: [markdown]  # Avoid conflicts with markdown formatting
+      - id: check-json
+      - id: check-toml
+      - id: check-yaml
       - id: mixed-line-ending
-
-  # Secret detection
+      - id: end-of-file-fixer
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.30.0
+    rev: v8.30.1
     hooks:
       - id: gitleaks
-
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v4.13.9
     hooks:
       - id: commitizen
+  - repo: https://github.com/woodruffw/zizmor-pre-commit
+    rev: v1.23.1
+    hooks:
+      - id: zizmor
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.11
     hooks:
