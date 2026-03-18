@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v2.0.0...v2.1.0) (2026-03-18)
+
+
+### Features
+
+* **core:** add claude-md skill to core plugin ([#17](https://github.com/ariwk/claude-toolkit-polarion/issues/17)) ([71ea785](https://github.com/ariwk/claude-toolkit-polarion/commit/71ea785f9b21497e3f3650f2d5d013051df0a56f)), closes [#16](https://github.com/ariwk/claude-toolkit-polarion/issues/16)
+
 ## [2.0.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v1.1.0...v2.0.0) (2026-02-26)
 
 
