@@ -36,7 +36,7 @@ claude-toolkit-polarion/
 **Marketplace vs Plugins:**
 - The **marketplace** is a container that lists available plugins in `marketplace.json`
 - Each **plugin** is an independent unit with its own `plugin.json`
-- Users: `/plugin marketplace add ariwk/claude-toolkit-polarion` then `/plugin install <name>@claude-toolkit-polarion`
+- Users: `/plugin marketplace add SchweizerischeBundesbahnen/claude-toolkit-polarion` then `/plugin install <name>@claude-toolkit-polarion`
 
 **Plugin Components:**
 - **Agents** (`.md` files in `agents/`) - AI personas with specialized knowledge and tool access
@@ -243,8 +243,8 @@ This repo uses **release-please** for automated semantic versioning:
 
 Users can install specific versions:
 ```bash
-/plugin marketplace add ariwk/claude-toolkit-polarion#v1.0.0
-/plugin marketplace add ariwk/claude-toolkit-polarion#main
+/plugin marketplace add SchweizerischeBundesbahnen/claude-toolkit-polarion#v1.0.0
+/plugin marketplace add SchweizerischeBundesbahnen/claude-toolkit-polarion#main
 ```
 
 ## Common Development Tasks

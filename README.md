@@ -16,11 +16,11 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 ### Add the Marketplace
 
 ```bash
-/plugin marketplace add ariwk/claude-toolkit-polarion
+/plugin marketplace add SchweizerischeBundesbahnen/claude-toolkit-polarion
 
 # Or pin to a specific version/branch:
-/plugin marketplace add ariwk/claude-toolkit-polarion#v1.0.0
-/plugin marketplace add ariwk/claude-toolkit-polarion#main
+/plugin marketplace add SchweizerischeBundesbahnen/claude-toolkit-polarion#v1.0.0
+/plugin marketplace add SchweizerischeBundesbahnen/claude-toolkit-polarion#main
 ```
 
 ### Install Individual Plugins

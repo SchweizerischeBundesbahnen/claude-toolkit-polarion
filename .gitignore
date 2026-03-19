@@ -1,20 +1,15 @@
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
-# Editor files
-*.swp
-*.swo
-*~
+# IDEs
 .idea/
 .vscode/
+*.swp
+*.swo
 
-# Temporary files
-*.tmp
-*.temp
-*.log
+# Environment
+.env
+.env.*
 
-# Local development
-.claude/
-TODO.md
-/node_modules/
+# Build (add project-specific rules below)
