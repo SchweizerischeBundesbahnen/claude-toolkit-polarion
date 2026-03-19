@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v2.1.0...v2.2.0) (2026-03-19)
+
+
+### Features
+
+* **core:** add triage-code-reviews skill to core plugin ([#21](https://github.com/ariwk/claude-toolkit-polarion/issues/21)) ([486dffb](https://github.com/ariwk/claude-toolkit-polarion/commit/486dffba0b67044832cb4b377be027d0a1cda75e))
+
 ## [2.1.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v2.0.0...v2.1.0) (2026-03-18)
 
 
