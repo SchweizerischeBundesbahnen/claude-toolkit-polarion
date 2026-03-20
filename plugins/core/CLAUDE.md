@@ -116,17 +116,16 @@
 
 ## Code Review Protocol
 
-When asked to review code/changes/files:
+Reviews must be **terse, actionable, problem-focused**. No praise, no analysis of unchanged code. Only comment on changed lines.
+
+**Skip** (automated tools already check these): code formatting, import order, static analysis findings, CI/linting failures, commit message format, secret scanning.
 
 **Focus on:**
-
-- Bugs or logic errors
-- Security vulnerabilities (SQL injection, XSS, auth bypass, secrets exposure)
-- Breaking changes (API changes, removed functionality)
+- Security: input validation, injection risks, auth bypass, secrets in logs/errors
+- Correctness: bugs, logic errors, unhandled edge cases, broken error paths
+- Breaking changes: API contracts, config structure, backward compatibility
+- Resource management: unclosed resources, memory leaks, connection handling
 - Missing tests for new functionality
-- Critical performance issues introduced by changes
-
-**DO NOT review:** unchanged code, style/formatting, optional improvements, or provide praise.
 
 **Be terse.** Format: `file:line` - Problem - Fix: solution
 
