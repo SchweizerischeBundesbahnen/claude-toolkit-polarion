@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/SchweizerischeBundesbahnen/claude-toolkit-polarion/compare/v2.2.0...v2.2.1) (2026-03-20)
+
+
+### Bug Fixes
+
+* slim down core CLAUDE.md to gotchas-only format ([487543f](https://github.com/SchweizerischeBundesbahnen/claude-toolkit-polarion/commit/487543f0e3dd28c8a04fb3f9ca19a80e69fd62bc))
+
 ## [2.2.0](https://github.com/ariwk/claude-toolkit-polarion/compare/v2.1.0...v2.2.0) (2026-03-19)
 
 
