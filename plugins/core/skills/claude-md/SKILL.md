@@ -20,7 +20,7 @@ Agents navigate codebases effectively without help. What they cannot discover ar
 
 ## What Belongs in CLAUDE.md
 
-Include only **landmine information** — facts the agent would trip over without being told:
+Include only **gotchas** — facts the agent would trip over without being told:
 
 1. **Deprecated patterns still in the codebase** — e.g., "The `auth/` module uses the old session API; do not extend it, use `auth-v2/` instead."
 2. **Custom or unusual tooling preferences** — e.g., "Use `uv` instead of `pip`; never use `pip install` directly."
@@ -53,7 +53,7 @@ Treat CLAUDE.md like a bug tracker, not a wiki:
 
 - **Add an entry** when an agent fails unexpectedly due to a non-obvious constraint.
 - **Remove an entry** when the underlying issue is resolved in the code itself.
-- **Never bulk-generate** CLAUDE.md content from an AI — it will produce codebase overviews that hurt performance. Write entries manually, one landmine at a time.
+- **Never bulk-generate** CLAUDE.md content from an AI — it will produce codebase overviews that hurt performance. Write entries manually, one gotcha at a time.
 
 ## Editing Workflow
 
@@ -61,7 +61,7 @@ When asked to create or update a CLAUDE.md:
 
 1. **Read the existing file** if one exists.
 2. **Audit every existing line** against the Prime Directive. Propose removing anything the agent can discover from the code.
-3. **For new content**, confirm it is a genuine landmine (non-discoverable, agent-trip-prone fact).
+3. **For new content**, confirm it is a genuine gotcha (non-discoverable, agent-trip-prone fact).
 4. **Keep the file short** — if it grows beyond ~20 lines, scrutinize every entry.
 5. **Never add** project overviews, directory tours, or tech stack lists.
 
