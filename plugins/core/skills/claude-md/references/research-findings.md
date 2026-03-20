@@ -35,9 +35,40 @@ These approaches show promise but are more complex to implement:
 - **Arize AI approach**: Iterative refinement loop with agent feedback — 5–11% accuracy gains
 - **Layered architecture**: Protocol routing to focused persona files with automated maintenance
 
+## Validated Safeguard Patterns (ranked by evidence)
+
+1. **Gotcha/landmine registry** — Only non-inferable hazards. Most validated pattern across all research.
+2. **Verification commands** — "Single highest-leverage thing" per Anthropic. Concrete self-check commands after changes.
+3. **Conciseness** — Under 60-100 lines. U-shaped attention means the middle gets ignored.
+4. **Known LLM shortcut behaviors** — Explicit boundaries against lint suppression, test removal, deferred fixes. LLMs take the path of least resistance.
+5. **Rationale annotations** — Brief "why" per rule. Models with rationale are less likely to override rules.
+6. **Pattern references** — "Follow the pattern in X" beats prose descriptions of conventions.
+
+## Patterns That Are Cargo Cult
+
+- **Persona assignment** ("You are a senior engineer") — no controlled evidence of improvement
+- **"Ask before acting" gates** — routinely violated under context pressure. Use hooks instead.
+- **Architecture descriptions** — agents read code; prose overviews risk anchoring to outdated descriptions
+- **"Think step by step"** — baked into modern model training, wastes a line
+- **Auto-generated /init content** — LLM-generated context consistently hurts performance
+
+## Critical Limitation
+
+CLAUDE.md content is advisory context, not enforced configuration. For hard constraints, use deterministic enforcement: hooks, permission rules, CI checks, linters. CLAUDE.md rules document *why* the enforcement exists.
+
 ## Practical Synthesis (Addy Osmani, Google)
 
 Filter context files aggressively. The only content worth including is information that:
 1. An agent cannot derive from reading the code
 2. Would cause a failure or significant wasted effort if unknown
 3. Is not documented elsewhere (README, config files, CI)
+
+## Sources
+
+- [Sulat.com: Agents.md Is Hurting You](https://sulat.com/p/agents-md-hurting-you) — synthesis of Gloaguen et al. and Lulla et al. findings
+- [Gloaguen et al. (Feb 2026) — ETH Zurich AGENTBENCH](https://arxiv.org/html/2512.18925v2) — context file performance impact study
+- [Lulla et al. (Jan 2026) — Impact of AGENTS.md on AI Coding Agents](https://arxiv.org/pdf/2601.20404) — efficiency vs. success rate analysis
+- [Anthropic: Best Practices for Claude Code](https://code.claude.com/docs/en/best-practices)
+- [Anthropic: How Claude Remembers Your Project](https://code.claude.com/docs/en/memory)
+- [HumanLayer: Writing a Good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
+- [Paddo.dev: Claude Code Hooks - Guardrails That Actually Work](https://paddo.dev/blog/claude-code-hooks-guardrails/)

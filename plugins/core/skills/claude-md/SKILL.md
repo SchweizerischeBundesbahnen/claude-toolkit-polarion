@@ -26,7 +26,8 @@ Include only **gotchas** — facts the agent would trip over without being told:
 2. **Custom or unusual tooling preferences** — e.g., "Use `uv` instead of `pip`; never use `pip install` directly."
 3. **Unexpected dependency locations** — e.g., "Production config lives in `infra/prod/` not in the app."
 4. **Non-obvious architectural decisions** — e.g., "All DB writes go through the event bus, never directly."
-5. **Gotchas that caused agent failures in the past** — add an entry after an agent fails unexpectedly; remove it once the underlying code issue is fixed.
+5. **Known LLM shortcut behaviors** — e.g., "Never suppress lint errors with `# noqa` or skip failing tests with `@pytest.mark.skip` — fix the root cause." LLMs take the path of least resistance; explicit boundaries prevent this.
+6. **Gotchas that caused agent failures in the past** — add an entry after an agent fails unexpectedly; remove it once the underlying code issue is fixed.
 
 ## What Does NOT Belong in CLAUDE.md
 
