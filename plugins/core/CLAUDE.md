@@ -26,4 +26,4 @@
 **CLAUDE.md** — gotchas and architecture decisions only. Document *why*, not *what*. Follow `/claude-md` skill principles.
 **TODO.md** — tactical tasks and progress. Auto-saved before `/compact` (PreCompact hook). Manual: `/save-todos`.
 **README.md** — user-facing only. No internal dev details.
-**`/docs`** — all additional documentation. Never create standalone `.md` files in the project root.
+**`/docs`** — all additional project documentation. Root-level `.md` files are limited to standard community files (`README.md`, `CLAUDE.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `LICENSE.md`). Do not add new standalone `.md` files in the project root.

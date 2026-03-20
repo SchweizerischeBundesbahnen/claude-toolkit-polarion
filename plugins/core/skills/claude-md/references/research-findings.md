@@ -65,10 +65,10 @@ Filter context files aggressively. The only content worth including is informati
 
 ## Sources
 
-- [Sulat.com: Agents.md Is Hurting You](https://sulat.com/p/agents-md-hurting-you)
+- [Sulat.com: Agents.md Is Hurting You](https://sulat.com/p/agents-md-hurting-you) — synthesis of Gloaguen et al. and Lulla et al. findings
+- [Gloaguen et al. (Feb 2026) — ETH Zurich AGENTBENCH](https://arxiv.org/html/2512.18925v2) — context file performance impact study
+- [Lulla et al. (Jan 2026) — Impact of AGENTS.md on AI Coding Agents](https://arxiv.org/pdf/2601.20404) — efficiency vs. success rate analysis
 - [Anthropic: Best Practices for Claude Code](https://code.claude.com/docs/en/best-practices)
 - [Anthropic: How Claude Remembers Your Project](https://code.claude.com/docs/en/memory)
 - [HumanLayer: Writing a Good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
 - [Paddo.dev: Claude Code Hooks - Guardrails That Actually Work](https://paddo.dev/blog/claude-code-hooks-guardrails/)
-- [ETH Zurich Cursor Rules Study](https://arxiv.org/html/2512.18925v2)
-- [Impact of AGENTS.md on AI Coding Agents](https://arxiv.org/pdf/2601.20404)
