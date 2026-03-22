@@ -9,7 +9,7 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 | **ansible** | 3 | Ansible infrastructure automation, Molecule testing, Testinfra verification |
 | **python** | 4 | Python/FastAPI development, API design, debugging, Ruff linting |
 | **containers** | 2 | Alpine Linux and Red Hat UBI container optimization |
-| **core** | 3 | Documentation lookup, research analysis, agent/skill advisor |
+| **core** | 2 | Documentation lookup, research analysis, workflow commands, hooks |
 
 ## Installation
 
@@ -72,7 +72,6 @@ A monorepo marketplace providing specialized Claude Code plugins for Python, Ans
 |-------|-------------|
 | **context7-assistant** | Documentation assistant using Context7 MCP |
 | **deep-research-analyst** | Internet research with critical analysis and synthesis |
-| **subagent-expert** | Agent and skill creation, review, and best practices |
 
 **Skills:**
 
