@@ -1,0 +1,8 @@
+{
+  "name": "polarion",
+  "description": "Local ALM Polarion service management and automation plugin.",
+  "author": {
+    "name": "SBB Polarion Team",
+    "email": "polarion-opensource@sbb.ch"
+  }
+}

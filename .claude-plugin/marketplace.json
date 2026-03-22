@@ -11,11 +11,6 @@
       "source": "./plugins/ansible"
     },
     {
-      "name": "python",
-      "description": "Python development toolkit",
-      "source": "./plugins/python"
-    },
-    {
       "name": "containers",
       "description": "Container optimization toolkit",
       "source": "./plugins/containers"
@@ -24,6 +19,26 @@
       "name": "core",
       "description": "Core utilities and workflows",
       "source": "./plugins/core"
+    },
+    {
+      "name": "java",
+      "description": "Java development toolkit",
+      "source": "./plugins/java"
+    },
+    {
+      "name": "javascript",
+      "description": "JavaScript/TypeScript development toolkit",
+      "source": "./plugins/javascript"
+    },
+    {
+      "name": "polarion",
+      "description": "Local ALM Polarion service management and automation",
+      "source": "./plugins/polarion"
+    },
+    {
+      "name": "python",
+      "description": "Python development toolkit",
+      "source": "./plugins/python"
     }
   ]
 }
