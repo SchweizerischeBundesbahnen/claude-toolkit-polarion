@@ -8,7 +8,7 @@ A monorepo marketplace providing specialized Claude Code plugins for Java, JavaS
 |--------|--------|--------|-------------|
 | **ansible** | 3 | — | Ansible infrastructure automation, Molecule testing, Testinfra verification |
 | **containers** | 2 | — | Alpine Linux and Red Hat UBI container optimization |
-| **core** | 2 | 4 | Documentation lookup, research analysis, workflow commands, hooks |
+| **core** | 2 | 6 | Documentation lookup, research analysis, workflow commands, hooks |
 | **java** | 4 | 2 | Java 21+ development, Spring Boot, Maven, JUnit 5 |
 | **javascript** | 4 | 2 | JavaScript/TypeScript, React, Node.js, Jest/Vitest |
 | **polarion** | — | 1 | Local ALM Polarion service management |
@@ -73,10 +73,12 @@ A monorepo marketplace providing specialized Claude Code plugins for Java, JavaS
 
 | Skill | Description |
 |-------|-------------|
+| `/claude-md` | Create or update CLAUDE.md files with evidence-based best practices |
 | `/commit` | Interactive git commit with ticket reference and pre-commit checks |
 | `/precommit` | Run pre-commit checks on staged or all files |
 | `/save-todos` | Persist TodoWrite state to TODO.md |
 | `/tox` | Run tox test suite with environment options |
+| `/triage-code-reviews` | Triage and address PR review comments |
 
 **Hooks:**
 - PostToolUse: Reminds to run pre-commit after file modifications
